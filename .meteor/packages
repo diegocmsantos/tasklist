@@ -7,3 +7,5 @@
 meteor-platform
 autopublish
 insecure
+mrt:bootstrap-3
+momentjs:moment
