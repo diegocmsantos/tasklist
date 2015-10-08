@@ -5,5 +5,7 @@ Meteor.startup(function(){
 });
 
 function publishTarefas() {
-    return Tarefas.find({});
+
+    return Tarefas.find({ usuario: this.userId });
+
 }

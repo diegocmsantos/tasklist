@@ -20,6 +20,7 @@
 
 				<ul class="nav navbar-nav navbar-right">
 				
+					{{> loginButtons}}
 
 				</ul>
 
@@ -31,9 +32,12 @@
 
 	<main class="container">
 
+	{{#if currentUser}}
 		{{> novo}}
-
 		{{> lista}}
+	{{else}}
+		Você deve se logar primeiro
+	{{/if}}
 
 	</main>
 

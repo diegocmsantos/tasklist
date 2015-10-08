@@ -12,7 +12,7 @@ function submitForm( event, template ) {
     var name  = input.val();
 
     //Tarefas.insert( { nome: name, data: new Date() } );
-    Meteor.call( "adiciona", { nome: name } );
+    Meteor.call( "adiciona", { nome: name, usuario: this.userId } );
     input.val( '' );
 
 }
